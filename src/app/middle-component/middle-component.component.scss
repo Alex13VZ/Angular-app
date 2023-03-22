@@ -2,75 +2,75 @@
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
-}
+	position: relative;
+	top: 100px;
+	gap: 25px;
 
-.card1 {
-	color: black;
-	background-color: #fd99ff;
-	width: 365px;
-	height: 110px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	padding-inline: 4rem;
-}
+	.card1 {
+		color: black;
+		background-color: #fd99ff;
+		width: 100%;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		padding: 22px 22px 21px 46px;
+	}
 
-.card2 {
-	color: black;
-	background-color: #ff9e9e;
-	width: 365px;
-	height: 157px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	margin-top: 25px;
-	padding-inline: 4rem;
-}
+	.card2 {
+		color: black;
+		background-color: #ff9e9e;
+		width: 100%;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		padding: 22px 22px 21px 46px;
+	}
 
-.card3 {
-	color: black;
-	background-color: #91f48f;
-	width: 365px;
-	height: 123px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	margin-top: 25px;
-	padding-inline: 4rem;
-}
+	.card3 {
+		color: black;
+		background-color: #91f48f;
+		width: 100%;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		padding: 22px 22px 21px 46px;
+	}
 
-.card4 {
-	color: black;
-	background-color: #fff599;
-	width: 365px;
-	height: 110px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	margin-top: 25px;
-	padding-inline: 4rem;
-}
+	.card4 {
+		color: black;
+		background-color: #fff599;
+		width: 100%;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		padding: 22px 22px 21px 46px;
+	}
 
-.card5 {
-	color: black;
-	background-color: #9effff;
-	width: 365px;
-	height: 120px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	margin-top: 25px;
-	padding-inline: 6rem;
-}
+	.card5 {
+		color: black;
+		background-color: #9effff;
+		width: 100%;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		padding: 22px 22px 21px 46px;
+	}
 
-.card6 {
-	color: black;
-	background-color: #B69CFF;
-	width: 365px;
-	height: 100px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	margin-top: 25px;
-	padding-inline: 4rem;
+	.card6 {
+		color: black;
+		background-color: #b69cff;
+		width: 100%;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		padding: 22px 22px 21px 46px;
+	}
+	@media screen and (min-width: 500px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		.card1,.card2,.card3,.card4,.card5,.card6{
+			flex: 25%;
+		}
+		
+	}
 }
