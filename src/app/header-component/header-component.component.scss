@@ -1,0 +1,41 @@
+.wrapper {
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+
+	.titlu {
+		color: white;
+		position: fixed;
+		top: 47px;
+		left: 24px;
+	}
+
+	.lupa-container {
+		background-color: #3b3b3b;
+		border-radius: 15px;
+		position: fixed;
+		width: 50px;
+		height: 50px;
+		padding: 16px;
+		top: 51px;
+		left: 268px;
+	}
+
+	.lupa-color {
+		fill: white;
+	}
+
+	.icon-container {
+		background-color: #3b3b3b;
+		border-radius: 15px;
+		position: fixed;
+		width: 50px;
+		height: 50px;
+		padding: 16px;
+		top: 51px;
+		left: 339px;
+	}
+}
