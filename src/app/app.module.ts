@@ -6,17 +6,28 @@ import { AppComponent } from './app.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
 import { MiddleComponentComponent } from './middle-component/middle-component.component';
 import { BottomComponentComponent } from './bottom-component/bottom-component.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
+import { NotesComponent } from './notes/notes.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponentComponent,
     MiddleComponentComponent,
-    BottomComponentComponent
+    BottomComponentComponent,
+    DialogComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,MatIconModule,MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

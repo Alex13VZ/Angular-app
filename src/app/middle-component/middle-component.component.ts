@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Note } from '../models/note.model';
+
 
 @Component({
   selector: 'app-middle-component',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class MiddleComponentComponent {
 
+  notes: Note[] = [{
+    description: "text",
+    color: "red",
+    id: 1,
+    title: "titlu"
+  }]
 }

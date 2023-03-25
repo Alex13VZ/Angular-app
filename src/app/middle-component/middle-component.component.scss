@@ -9,6 +9,15 @@
 	top: 100px;
 	gap: 25px;
 
+	.card {
+		
+
+		&-1 {
+			background-color: red;
+			color: blue;
+		}
+	}
+
 	.card1 {
 		color: black;
 		background-color: #fd99ff;
