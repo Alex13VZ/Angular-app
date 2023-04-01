@@ -12,6 +12,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { NotesComponent } from './notes/notes.component';
+import { NotesPrimaryService } from './services/notes-primary.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -21,15 +24,16 @@ import { NotesComponent } from './notes/notes.component';
     MiddleComponentComponent,
     BottomComponentComponent,
     DialogComponent,
-    NotesComponent
+    NotesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,MatIconModule,MatDialogModule
+    MatButtonModule,MatIconModule,MatDialogModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [NotesPrimaryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
