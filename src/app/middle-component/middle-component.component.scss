@@ -8,13 +8,18 @@
 	position: relative;
 	top: 100px;
 	gap: 25px;
+	color: white;
 
 	.card {
-		
+		transition: background-color 0.2s ease-in;
 
 		&-1 {
 			background-color: red;
 			color: blue;
+		}
+		&:hover{
+			background-color: red;
+			transition: background-color 0.2s ease-in;
 		}
 	}
 
@@ -26,6 +31,7 @@
 		display: flex;
 		align-items: center;
 		padding: 22px 22px 21px 46px;
+
 	}
 
 	.card2 {

@@ -7,6 +7,7 @@ import { filter, from, map, Observable, of } from 'rxjs';
 })
 export class NotesPrimaryService {
 
+
   constructor(private http: HttpClient) { }
   getPokemon(): Observable<any> {
     return this.http.get("https://pokeapi.co/api/v2/pokemon/ditto");

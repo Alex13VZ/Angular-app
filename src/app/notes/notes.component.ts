@@ -24,7 +24,7 @@ export class NotesComponent implements OnChanges, OnInit {
       console.log(res, 'this is the requested pokemon')
     })
 
-    this.notesService.createOperatorsExample4();
+    this.notesService.createOperatorsExample2();
 
    this.somePokemonSource$ = this.notesService.getPokemon();
   }

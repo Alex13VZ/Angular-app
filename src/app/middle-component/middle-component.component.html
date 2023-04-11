@@ -1,12 +1,19 @@
-<div  class="card-wrapper">
+<!-- <div  class="card-wrapper">
 	<div class="card1">UI concepts worth exsisting</div>
 	<div class="card2">Book Review :The Design of Everyday Things by Don Norman</div>
 	<div class="card3">Animes produced by Ufotable</div>
 	<div class="card4">Mangas planned to read</div>
 	<div class="card5">Awesome tweets collection</div>
 	<div class="card6">List of free & open source apps</div>
-</div>
+</div> -->
 
+<div class="card-wrapper">
+	<div class="card {{item.class}}"  *ngFor="let item of items" [ngClass]="{'hovered': item.hovered, 'removed': item.removed}"
+		(mouseenter)="item.hovered = true" (mouseleave)="item.hovered = false" (click)="item.removed = true">
+		{{ item.removed ? '' : item.content }}
+		<i class="fas fa-trash-alt" *ngIf="item.hovered && !item.removed" (click)="item.removed = true"></i>
+	</div>
+</div>
 
 <!-- TO-DO use -1 -2 instead of current implementation -->
 
