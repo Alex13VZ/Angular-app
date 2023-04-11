@@ -8,10 +8,14 @@
 </div> -->
 
 <div class="card-wrapper">
-	<div class="card {{item.class}}"  *ngFor="let item of items" [ngClass]="{'hovered': item.hovered, 'removed': item.removed}"
-		(mouseenter)="item.hovered = true" (mouseleave)="item.hovered = false" (click)="item.removed = true">
+	<div class="card {{item.class}}" *ngFor="let item of items"
+		[ngClass]="{'hovered': item.hovered, 'removed': item.removed}" (mouseenter)="item.hovered = true"
+		(mouseleave)="item.hovered = false" (click)="item.removed = true; item.hovered=false">
 		{{ item.removed ? '' : item.content }}
-		<i class="fas fa-trash-alt" *ngIf="item.hovered && !item.removed" (click)="item.removed = true"></i>
+		<button *ngIf="item.hovered && item.content !=='' " class="icon-wrapper" mat-fab color="primary"
+			aria-label="Example icon button with a delete icon">
+			<mat-icon class="iconColor">delete</mat-icon>
+		</button>
 	</div>
 </div>
 
